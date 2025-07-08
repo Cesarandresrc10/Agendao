@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro - Agendao</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script>
+    function mostrarOtroNegocio(select) {
+      const otroInput = document.getElementById('otro_negocio_input');
+      if (select.value === "Otro") {
+        otroInput.style.display = 'block';
+      } else {
+        otroInput.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="form-card">
+      <h2>Registra tu negocio</h2>
+
+      <form action="/crear-cuenta" method="GET">
+        <input type="text" name="nombre_negocio" placeholder="Nombre del negocio" required>
+
+        <select name="tipo_negocio" onchange="mostrarOtroNegocio(this)" required>
+          <option value="">¿Qué tipo de negocio tienes?</option>
+          <option value="Barbería">Barbería</option>
+          <option value="Peluquería">Peluquería</option>
+          <option value="Spa">Spa</option>
+          <option value="Clínica estética">Clínica estética</option>
+          <option value="Consultorio odontológico">Consultorio odontológico</option>
+          <option value="Consultorio médico">Consultorio médico</option>
+          <option value="Centro de masajes">Centro de masajes</option>
+          <option value="Otro">Otro</option>
+        </select>
+
+        <input type="text" id="otro_negocio_input" name="otro_negocio" placeholder="Especifica el tipo de negocio" style="display: none;">
+
+        <select name="num_profesionales" required>
+          <option value="">¿Cuántos profesionales atienden?</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3-5">3 - 5</option>
+          <option value="6+">Más de 6</option>
+        </select>
+
+        <input type="text" name="nombre" placeholder="Ingresa tu nombre y apellido" required>
+        <input type="email" name="email" placeholder="Ingresa tu email" required>
+
+        <div class="telefono">
+          <span class="flag">🇨🇴</span>
+          <input type="text" name="telefono" placeholder="321 1234567" required>
+        </div>
+
+        <button type="submit" class="btn-siguiente">Siguiente</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

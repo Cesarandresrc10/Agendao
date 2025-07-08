@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1751943441608,
+    "nombre": "Barberia Cesar",
+    "email": "c_ramirezc@hotmail.com",
+    "telefono": "3015346940",
+    "linkPersonalizado": "http://localhost:3000/agendamiento/1751943441608"
+  },
+  {
+    "id": 1751944007903,
+    "nombre": "cesar",
+    "email": "c_ramirezc@hotmail.com",
+    "telefono": "3015346940",
+    "linkPersonalizado": "http://localhost:3000/agendamiento/1751944007903"
+  }
+]

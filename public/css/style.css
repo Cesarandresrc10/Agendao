@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f8;
+}
+
+:root {
+  --azul: #0056b3;
+  --vinotinto: #8b1e3f;
+  --blanco: #fff;
+}
+
+/* Página de inicio */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.home-container .content {
+  background: var(--blanco);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.marca {
+  color: var(--vinotinto);
+}
+
+.btn-principal {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: var(--azul);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-principal:hover {
+  background: #003d80;
+}
+
+/* Estilos comunes para formularios */
+.form-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+form select,
+form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.telefono {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.telefono .flag {
+  font-size: 20px;
+}
+
+.telefono input {
+  flex: 1;
+}
+
+button, .btn-siguiente {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--vinotinto);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover, .btn-siguiente:hover {
+  background-color: #5a122b;
+}
